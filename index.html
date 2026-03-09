@@ -1,0 +1,281 @@
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+body{
+
+background:linear-gradient(120deg,#0f172a,#1e3a8a,#312e81);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:40px 20px;
+color:white;
+
+}
+
+/* контейнер */
+
+.container{
+
+max-width:1100px;
+width:100%;
+
+}
+
+/* заголовок */
+
+.main-title{
+
+font-size:46px;
+font-weight:800;
+text-align:center;
+margin-bottom:10px;
+
+background:linear-gradient(90deg,#60a5fa,#a78bfa,#f472b6);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.subtitle{
+
+text-align:center;
+margin-bottom:50px;
+opacity:0.85;
+font-size:18px;
+
+}
+
+/* стеклянная карточка */
+
+.glass{
+
+background:rgba(255,255,255,0.08);
+border-radius:18px;
+padding:30px;
+backdrop-filter:blur(16px);
+-webkit-backdrop-filter:blur(16px);
+border:1px solid rgba(255,255,255,0.18);
+box-shadow:0 8px 32px rgba(0,0,0,0.35);
+
+}
+
+/* секция */
+
+.section-title{
+
+font-size:26px;
+margin-bottom:25px;
+position:relative;
+
+}
+
+.section-title:after{
+
+content:"";
+display:block;
+width:60px;
+height:4px;
+margin-top:8px;
+border-radius:4px;
+background:#60a5fa;
+
+}
+
+/* карточки навыков */
+
+.skills{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+
+}
+
+/* карточка */
+
+.card{
+
+background:rgba(255,255,255,0.06);
+border-radius:16px;
+padding:22px;
+border:1px solid rgba(255,255,255,0.15);
+transition:all .35s ease;
+backdrop-filter:blur(10px);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px) scale(1.02);
+border-color:#60a5fa;
+box-shadow:0 10px 35px rgba(0,0,0,0.4);
+
+}
+
+.card h3{
+
+margin-bottom:12px;
+color:#93c5fd;
+
+}
+
+.card ul{
+
+padding-left:18px;
+line-height:1.6;
+opacity:0.9;
+
+}
+
+/* блок кейса */
+
+.case{
+
+margin-top:16px;
+padding:14px;
+background:rgba(96,165,250,0.12);
+border-left:4px solid #60a5fa;
+border-radius:8px;
+font-size:15px;
+
+}
+
+/* инструменты */
+
+.tools{
+
+margin-top:35px;
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+
+}
+
+.tag{
+
+padding:8px 14px;
+border-radius:20px;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+font-size:14px;
+transition:0.3s;
+
+}
+
+.tag:hover{
+
+background:#60a5fa;
+color:#0f172a;
+cursor:pointer;
+
+}
+
+/* адаптивность */
+
+@media (max-width:600px){
+
+.main-title{
+font-size:32px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.glass{
+padding:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="main-title">ПОРТФОЛИО AI-НАВЫКОВ</h1>
+<p class="subtitle">Кобцева Светлана Васильевна</p>
+
+<div class="glass">
+
+<h2 class="section-title">Ключевые AI-навыки и практические кейсы</h2>
+
+<div class="skills">
+
+<div class="card">
+
+<h3>Эффективная работа с нейросетями</h3>
+
+<ul>
+<li>Различаю ИИ, нейросети и ChatGPT, объясняю разницу простым языком</li>
+<li>Использую чат-боты вместо классического поиска</li>
+<li>Применяю нейросети для личной эффективности (диеты, тренировки)</li>
+</ul>
+
+<div class="case">
+
+<b>Кейс:</b><br>
+Оптимизировала задачу контроля дебиторской задолженности
+с использованием AI-инструментов.
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Промт-инжиниринг</h3>
+
+<ul>
+<li>Использую последовательные, ролевые и диалоговые промты</li>
+<li>Кастомизирую промты под бизнес-аналитику</li>
+<li>Создаю фреймворки генерации управленческих решений</li>
+</ul>
+
+<div class="case">
+
+<b>Кейс:</b><br>
+Разработала систему промтов для генерации управленческих решений.  
+Сокращение времени аналитики на <b>70%</b>.
+
+</div>
+
+</div>
+
+</div>
+
+<h2 class="section-title" style="margin-top:40px;">AI-инструменты</h2>
+
+<div class="tools">
+
+<div class="tag">ChatGPT</div>
+<div class="tag">Prompt Engineering</div>
+<div class="tag">AI Analytics</div>
+<div class="tag">Automation</div>
+<div class="tag">Business AI</div>
+<div class="tag">Data Analysis</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
